@@ -1,6 +1,6 @@
-# Bots/Messaging Extension
+# Hoiday Messaging Extension
 
-*Bots* allow users to interact with your web service through text, interactive cards, and task modules. *Messaging extensions* allow users to interact with your web service through buttons and forms in the Microsoft Teams client. They can search, or initiate actions, in an external system from the compose message area, the command box, or directly from a message.
+A simple Messaging Extension developed for MS Teams that can retrieve and display the list of holdiays for any region from a database stored within Azure Cosmos DB. The messaging extension opens a Task Module on launch from which the user can choose a desired location from the given searchable dropdown list. The source code for the web app displayed within the Task Module can be found [here](https://github.com/manugeorge04/SinglePageMERNWebApp). Subsequently the user can opt to share the table within the chat with another end user as a card.
 
 ## Prerequisites
 
@@ -37,5 +37,6 @@ Run ngrok - point to port 3978
 
 ## Deploy to Teams
 Start debugging the project by hitting the `F5` key or click the debug icon in Visual Studio Code and click the `Start Debugging` green arrow button.
+Alternatively, you can download the the App Manifest from the App Studio tab within the MS Teams Extension for VSCode and then upload the zip file as a custom app to Teams.
 
 
