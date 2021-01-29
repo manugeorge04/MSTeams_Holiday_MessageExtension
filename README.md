@@ -29,6 +29,17 @@ Run ngrok - point to port 3978
 
 - Ensure that you've [enabled the Teams Channel](https://docs.microsoft.com/en-us/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0)
 
+**Configure Bot**
+
+Create a `.env` File in the root directory and add the following lines
+
+- BotId=your-bot-id
+
+- BotPassword=your-bot-password
+
+
+
+
 ## Build and run
 
 ### `npm install`
