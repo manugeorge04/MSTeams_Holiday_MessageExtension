@@ -69,10 +69,10 @@ class BotActivityHandler extends TeamsActivityHandler {
                         }
                     ]
                 }//,
-                //result of map function to be added here
+                //result of map function to be added here @content.body
               ]                          
             }
-          }
+          }//adaptive card with just the titles
 
         const adaptiveCardBody = holidaylist.map((holiday) => {
             return{
@@ -102,7 +102,7 @@ class BotActivityHandler extends TeamsActivityHandler {
                     }
                 ]
             }
-        })
+        })//addition to adaptive card body to display the holiday occasion and dates got from the api
 
         const updatedBody = adaptiveCardAttachment.content.body.concat(adaptiveCardBody)
 
@@ -111,13 +111,13 @@ class BotActivityHandler extends TeamsActivityHandler {
         return adaptiveCardAttachment
     }
 
-    handleTeamsMessagingExtensionFetchTask(context, action) {        
+    handleTeamsMessagingExtensionFetchTask(context, action) {           
         return {
         task: {
             type: 'continue',
             value: {
-            width: 450,
-            height: 800,
+            width: 400,
+            height: 500,
             title: 'Holiday List',
             url: 'https://holidaylist.azurewebsites.net/',
             fallbackUrl: 'https://holidaylist.azurewebsites.net/'
