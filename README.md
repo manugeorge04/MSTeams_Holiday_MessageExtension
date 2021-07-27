@@ -1,4 +1,4 @@
-# Hoiday Messaging Extension
+# Holiday Messaging Extension
 
 A simple Messaging Extension developed for MS Teams that can retrieve and display the list of holdiays for any region from a database stored within Azure Cosmos DB. The messaging extension opens a Task Module on launch from which the user can choose a desired location from the given searchable dropdown list. The source code for the web app displayed within the Task Module can be found [here](https://github.com/manugeorge04/SinglePageMERNWebApp) and a production version [here](https://holidaylist.azurewebsites.net/). Subsequently the user can opt to share the table within the chat with another end user as an [Adaptive Card](https://adaptivecards.io/).
 
